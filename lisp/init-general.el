@@ -1,4 +1,10 @@
-;; company
+; syntax checking
+(use-package flycheck
+  :ensure t
+  :init
+  (global-flycheck-mode t))
+
+; company
 (use-package company
   :ensure t
   :init
