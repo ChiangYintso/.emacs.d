@@ -38,18 +38,10 @@
 (global-linum-mode 1) ; always show line numbers
 (setq linum-format "%d| ") ; set format
 
-(use-package modern-cpp-font-lock :ensure t)
-
 (require 'init-general)
 (require 'init-lsp)
 (require 'init-gdb)
-
-; CMake
-(use-package cmake-mode :ensure t)
-(setq auto-mode-alist
-      (append '(("CMakeLists\\.txt\\'" . cmake-mode)
-                ("\\.cmake\\'" . cmake-mode))
-              auto-mode-alist))
+(require 'init-cpp)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -58,7 +50,7 @@
  ;; If there is more than one, they won't work right.
  '(helm-completion-style 'helm)
  '(package-selected-packages
-   '(cmake-mode lsp-mode yasnippet lsp-treemacs helm-lsp projectile hydra flycheck company avy which-key helm-xref dap-mode)))
+   '(bazel cmake-mode lsp-mode yasnippet lsp-treemacs helm-lsp projectile hydra flycheck company avy which-key helm-xref dap-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

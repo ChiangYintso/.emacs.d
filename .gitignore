@@ -1,6 +1,8 @@
+/.cache
 /auto-save-list
 /elpa
 /eshell
 /snippets
 projectile-bookmarks.eld
+recentf
 .lsp-session-v1
