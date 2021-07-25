@@ -28,7 +28,7 @@
 (load-theme 'zenburn t)
 
 ; use xclip to interact with system clipboard
-(use-package xclip :ensure t)
+(use-package xclip :ensure t :defer t)
 (xclip-mode 1)
 
 (require 'init-exec-path) ;; Set up $PATH
