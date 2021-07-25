@@ -29,5 +29,4 @@ jobs:
 
     - uses: actions/checkout@v2
     - name: Check startup
-      run: chmod 777 ./test_startup.sh
       run: ./test_startup.sh
