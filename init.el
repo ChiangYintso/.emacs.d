@@ -18,12 +18,18 @@
 
 (use-package try :ensure t)
 (use-package which-key :ensure t :config (which-key-mode))
+
 (use-package evil :ensure t)
+(evil-mode 1)
+(fset 'evil-visual-update-x-selection 'ignore)
+
 (use-package exec-path-from-shell :ensure t)
 (use-package zenburn-theme :ensure t)
-  
 (load-theme 'zenburn t)
-(evil-mode 1)
+
+; use xclip to interact with system clipboard
+(use-package xclip :ensure t)
+(xclip-mode 1)
 
 (require 'init-exec-path) ;; Set up $PATH
 
