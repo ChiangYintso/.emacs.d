@@ -1,0 +1,7 @@
+# Emacs Config
+
+## Dependencies
+
+```shell
+sudo apt install xclip
+```

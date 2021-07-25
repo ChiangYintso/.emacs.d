@@ -1,6 +1,10 @@
 #!/bin/sh -e
 
 echo "Attempting startup..."
+
+echo "Install dependencies..."
+apt -y install xclip
+
 ${EMACS:=emacs} -nw --batch \
                 --eval '(progn
                         (defvar url-show-status)
