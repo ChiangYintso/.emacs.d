@@ -4,9 +4,7 @@ My Emacs configuration.
 
 ## Setup
 
-```shell
-sudo apt install xclip
-```
+This configuration requires xclip (optional).
 
 ## Manual
 
